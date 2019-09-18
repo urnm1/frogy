@@ -1,1 +1,4 @@
 
+#!/bin/bash
+
+cmake --build .
