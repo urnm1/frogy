@@ -6,11 +6,11 @@ language: cpp
 dist: bionic
 compiler: clang
 os: linux
-#addons:
-#  apt:
-#    packages:
-#      - cmake
-#      - ninja-build
+addons:
+  apt:
+    packages:
+      - cmake
+      - ninja-build
 #before_install:
 #install:
 #before_script:
