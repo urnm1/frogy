@@ -11,7 +11,7 @@ before_install:
 install:
   echo "install"
 script:
-  ./ci/configure.sh && ./ci/build.sh && ./ci/test.sh
+  bash -c "./ci/configure.sh && ./ci/build.sh && ./ci/test.sh"
 after_success:
   
 #branches:
