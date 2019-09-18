@@ -1,1 +1,21 @@
+git:
+  depth: 1
+  quiet: true
+  submodules: false
+  language: cpp
+dist: bionic
+compiler: clang
+os: linux
+#before_install:
 
+#install:
+
+script:
+  ./ci/configure.sh && ./ci/build.sh && ./ci/test.sh
+after_success:
+  
+#branches:
+#notifications:
+#env:
+#  global:
+    
