@@ -2,7 +2,7 @@ git:
   depth: 1
   quiet: true
   submodules: false
-  language: cpp
+language: cpp
 dist: bionic
 compiler: clang
 os: linux
