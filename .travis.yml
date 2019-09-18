@@ -15,7 +15,7 @@ addons:
 #install:
 #before_script:
 script:
-  cmake -G Ninja --configure . && cmake --build . && ctest .
+  cmake -DBUILD_TESTING -G Ninja --configure . && cmake --build . && ctest .
 after_success:
   
 #branches:
