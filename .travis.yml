@@ -6,12 +6,16 @@ language: cpp
 dist: bionic
 compiler: clang
 os: linux
-before_install:
-  echo "before_install"
-install:
-  echo "install"
+#addons:
+#  apt:
+#    packages:
+#      - cmake
+#      - ninja-build
+#before_install:
+#install:
+#before_script:
 script:
-  bash -c "./ci/configure.sh && ./ci/build.sh && ./ci/test.sh"
+  cmake -G Ninja --configure . && cmake --build . && ctest .
 after_success:
   
 #branches:
