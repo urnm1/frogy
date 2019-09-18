@@ -6,10 +6,10 @@ git:
 dist: bionic
 compiler: clang
 os: linux
-#before_install:
-
-#install:
-
+before_install:
+  echo "before_install"
+install:
+  echo "install"
 script:
   ./ci/configure.sh && ./ci/build.sh && ./ci/test.sh
 after_success:
